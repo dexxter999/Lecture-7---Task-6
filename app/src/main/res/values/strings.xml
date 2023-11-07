@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">User Add</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="active_users">Active users:</string>
+    <string name="deleted_users">Deleted users:</string>
+    <string name="_0">0</string>
+    <string name="active_users_0">0</string>
+    <string name="update_user">Update User</string>
+    <string name="delete_user">Delete User</string>
+    <string name="add_user">Add User</string>
+</resources>

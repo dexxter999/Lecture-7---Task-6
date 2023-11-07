@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="name"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="lastName"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="age"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tvSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/success"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:paddingTop="10dp"
+            android:text="@string/error"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/active_users"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/deleted_users"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activeUsersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/active_users_0"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/deletedUsersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/_0"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/update_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonDeleteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="@string/delete_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/add_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
